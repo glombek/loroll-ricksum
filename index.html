@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Loroll Ricksum</title>
+    <meta name="description" content="Lorem ipsum with a hidden Rick roll">
+    <meta name="author" content="Joe Glombek">
+
+    <link rel="stylesheet" href="css/bulma.min.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div>
+            <label for="numParagraphs">Number of paragraphs:</label>
+            <input type="number" min="1" v-model="numParagraphs" id="numParagraphs" />
+
+            <input type="checkbox" v-model="startWithPrefix" id="startWithPrefix" />
+            <label for="startWithPrefix">Start with "Loroll Ricksome..."</label>
+
+            <button v-on:click="generate">Generate</button>
+        </div>
+
+        <pre>{{output}}</pre>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
